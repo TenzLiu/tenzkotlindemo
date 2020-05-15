@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/news_icon"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="采用mvp+retrofix+rxjava框架的一款集结多功能的个人项目"
+            android:textSize="16sp"
+            android:textColor="@color/colorApp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-01-14"
+                android:textSize="14sp"
+                android:textColor="@color/colorGray"/>
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="TenzLiu"
+                android:textSize="14sp"
+                android:textColor="@color/colorGray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
